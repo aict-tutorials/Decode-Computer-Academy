@@ -1,0 +1,141 @@
+:root {
+  --bg: #0a1226;
+  --bg-soft: #121e3e;
+  --surface: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --primary: #2563eb;
+  --accent: #f59e0b;
+  --max-width: 980px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: #f8fafc;
+}
+
+.container {
+  width: min(var(--max-width), 92vw);
+  margin: 0 auto;
+}
+
+.hero {
+  color: #fff;
+  background: radial-gradient(circle at top right, #1e40af, var(--bg));
+  padding: 5rem 0 4rem;
+}
+
+.eyebrow {
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bfdbfe;
+  margin-bottom: .5rem;
+}
+
+h1 { font-size: clamp(1.9rem, 4vw, 3rem); line-height: 1.2; margin: 0; }
+
+.subheadline {
+  font-size: 1.1rem;
+  max-width: 760px;
+  margin: 1rem 0 1.5rem;
+  color: #dbeafe;
+}
+
+.promise {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 1rem 1.2rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.promise h2 {
+  font-size: 1.05rem;
+  margin: 0 0 .5rem;
+}
+
+ul {
+  margin: .5rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.cta {
+  display: inline-block;
+  background: linear-gradient(90deg, var(--accent), #f97316);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  padding: .9rem 1.3rem;
+  border-radius: 10px;
+}
+
+.section {
+  padding: 3.3rem 0;
+}
+
+.section h2 {
+  margin-top: 0;
+  line-height: 1.25;
+}
+
+.problem,
+.bonus,
+.why,
+.pricing {
+  background: #fff;
+}
+
+.solution,
+.guarantee,
+.cta-section {
+  background: var(--bg-soft);
+  color: #e2e8f0;
+}
+
+.solution h2,
+.guarantee h2,
+.cta-section h2 {
+  color: #fff;
+}
+
+.value-stack {
+  background: #eef2ff;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  font-weight: 700;
+  color: #1d4ed8;
+}
+
+.price {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.price span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.small {
+  color: #94a3b8;
+}
+
+.cta-section .cta {
+  margin-top: .8rem;
+}
